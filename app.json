@@ -3,6 +3,14 @@
     "name": "rn-news-fsd",
     "slug": "rn-news-fsd",
     "version": "1.0.0",
+    "extra": {
+      "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyDGrhD_xkXy3VYt4tHVAD-G_EK9WtIHlBQ",
+      "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "blogapp-6a75f.firebaseapp.com",
+      "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "blogapp-6a75f",
+      "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "blogapp-6a75f.firebasestorage.app",
+      "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "435311761293",
+      "EXPO_PUBLIC_FIREBASE_APP_ID": "1:435311761293:web:9205f0256ead0317338fc4"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,14 +21,17 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Use Face ID to sign in"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
+      "edgeToEdgeEnabled": false,
       "predictiveBackGestureEnabled": false
     },
     "web": {
